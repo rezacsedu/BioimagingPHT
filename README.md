@@ -40,8 +40,8 @@ First, clone this repository (given that you have already installed the git):
 
 Then you can install all the required libraries by issuing the following command:
 
- cd BioimagingPHT/
- pip3 install -r requirements.txt
+    cd BioimagingPHT/
+    pip3 install -r requirements.txt
 
 ### How to perform the training    
     1. python3 VGG_KL_test.py
