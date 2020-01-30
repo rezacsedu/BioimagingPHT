@@ -20,12 +20,12 @@ from keras.layers import *
 from keras.callbacks import CSVLogger
 from keras import callbacks
 from keras.preprocessing.image import ImageDataGenerator
-import networks.VGG
+import networks.VGG as vgg
 
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 import sklearn.metrics as sklm
-from lossprettifier import LossPrettifier
+from utils.lossprettifier import LossPrettifier
 
 # for reproducibility
 np.random.seed(3768)
@@ -123,7 +123,7 @@ steps_Per_Epoch = 32
 numEpochs = 2
 
 #Instantating VGG19 model
-model = VGG.VGG19_dense((360,360,1),5) #VGG19_dense for revised VGG19, VGG19 for VGG19. Please pay attention to VGG16(), chnage the input shape and class number in VGG.py.
+model = vgg.VGG19_dense((360,360,1),5) #VGG19_dense for revised VGG19, VGG19 for VGG19. Please pay attention to VGG16(), chnage the input shape and class number in VGG.py.
 
 #Creating an optimizers
 adaDelta = keras.optimizers.Adadelta(lr=1.0, rho=0.95)
