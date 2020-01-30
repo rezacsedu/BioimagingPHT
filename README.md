@@ -16,7 +16,33 @@ Due to difficulty in measurement, interpretation, and semi-quantitative grading 
 ### Scripts
     1. VGG_KL_test.py: OA quantification using VGG19 CNN architecture based on KL-grading
     2. ResNet_JSN_test.py: OA quantification using ResNet-18 CNN architecture based on JSN-grading
-   
+    3. utils: contains some utility functions
+    4. networks: contains the nework implementations. 
+
+### Installing dependencies
+To run the examples, you need to install following Python modules and libraries.
+
+    numpy
+    tensorflow
+    keras==2.2.4
+    scipy
+    matplotlib
+    sklearn
+    seaborn
+    pandas
+    skimage  
+    PIL
+    collections 
+
+First, clone this repository (given that you have already installed the git):
+
+    git clone https://github.com/rezacsedu/BioimagingPHT.git
+
+Then you can install all the required libraries by issuing the following command:
+
+ cd BioimagingPHT/
+ pip3 install -r requirements.txt
+
 ### How to perform the training    
     1. python3 VGG_KL_test.py
     2. python3 ResNet_JSN_test.py
