@@ -43,8 +43,8 @@ def dense_to_one_hot(labels_dense,num_clases=5):
 MRI_LabelPath = '/home/reza/DeepKneeExplainer/resources/newlabel.csv'
 train_MRI_image_Path = '/home/reza/DeepKneeExplainer/resources/Data/MRI/unbalanced/up/training'
 test_MRI_image_Path = '/home/reza/DeepKneeExplainer/resources/Data/MRI/unbalanced/up/validation'
-modelPath = "VGG19-KLnew.h5"
-resultPath = 'ResNetRESULTS-JSNnewbalance-MRIup.txt'
+modelPath = "ResNet18-KLnew.h5"
+resultPath = 'ResNet18_RESULTS-JSNnewbalance-MRIup.txt'
 
 # Loading training MRI images and labels
 def loadTrainImageAndLabels():
