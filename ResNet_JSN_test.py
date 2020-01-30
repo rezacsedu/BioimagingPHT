@@ -20,11 +20,12 @@ from keras.layers import *
 from keras.callbacks import CSVLogger
 from keras import callbacks
 from keras.preprocessing.image import ImageDataGenerator
-import networks.ResNet
+
+import networks.ResNet as resnet
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 import sklearn.metrics as sklm
-from lossprettifier import LossPrettifier
+from utils.lossprettifier import LossPrettifier
 
 # for reproducibility
 np.random.seed(3768)
@@ -126,7 +127,7 @@ steps_Per_Epoch = 32
 numEpochs = 2
 
 #Instantating ResNet-18 model
-model = ResNet.ResNet18((360,360,1),4) #here you can choose ResNet18 34 50 101. The detail settings are input shape and class number
+model = resnet.ResNet18((360,360,1),4) #here you can choose ResNet18 34 50 101. The detail settings are input shape and class number
 
 #Creating an optimizers
 adaDelta = keras.optimizers.Adadelta(lr=1.0, rho=0.95)
