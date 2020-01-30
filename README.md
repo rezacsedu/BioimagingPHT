@@ -1,5 +1,5 @@
 ## Osteoarthritis quantification based on MRI images
-Osteoarthritis (OA) is a degenerative joint disease and often defined as a heterogeneous group of health conditions and a phenomenal chronic disease that lead to joint symptoms and signs that are associated with defective integrity of articular cartilage, in addition to related changes in the underlying bone at the joint margins. The objective of this demo is to perform A quantification based on MRI cohorts from the multicenter osteoarthritis study (MOST), which we hope, will help to diagnose the OA severity level of the patients. 
+Osteoarthritis (OA) is a degenerative joint disease and often defined as a heterogeneous group of health conditions and a phenomenal chronic disease that lead to joint symptoms and signs that are associated with defective integrity of articular cartilage, in addition to related changes in the underlying bone at the joint margins. The objective of this demo is to perform distributed deep learning for OA quantification based on MRI cohorts from the multicenter osteoarthritis study (MOST), which we hope, will help to diagnose the OA severity level of the patients. 
 
 ### Neural network architectures
 The following 2 different neural network architectures are trained. 
