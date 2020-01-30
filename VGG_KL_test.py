@@ -6,6 +6,7 @@ import time
 import csv
 from PIL import Image
 import os
+
 import tensorflow as tf
 import keras
 from keras.callbacks import EarlyStopping, LearningRateScheduler
@@ -19,7 +20,8 @@ from keras.layers import *
 from keras.callbacks import CSVLogger
 from keras import callbacks
 from keras.preprocessing.image import ImageDataGenerator
-import VGG
+import networks.VGG
+
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 import sklearn.metrics as sklm
