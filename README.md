@@ -22,17 +22,15 @@ Due to difficulty in measurement, interpretation, and semi-quantitative grading 
 ### Installing dependencies
 To run the examples, you need to install following Python modules and libraries.
 
-    numpy
-    tensorflow
+    numpy=1.17.4
+    tensorflow==1.14      # CPU
+    tensorflow-gpu==1.14  # GPU
     keras==2.2.4
-    scipy
-    matplotlib
-    sklearn
-    seaborn
-    pandas
-    skimage  
-    PIL
-    collections 
+    scipy=1.3.2
+    sklearn==0.22
+    pandas==1.0.0
+    skimage==0.16.2  
+    PIL==6.2.1
 
 First, clone this repository (given that you have already installed the git):
 
