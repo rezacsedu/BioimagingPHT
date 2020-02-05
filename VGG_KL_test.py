@@ -30,6 +30,7 @@ from utils.lossprettifier import LossPrettifier
 # for reproducibility
 np.random.seed(3768)
 # use this environment flag to change which GPU to use 
+os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0" # make it 1 for CPU-based training 
 
 #Get TensorFlow session
