@@ -43,9 +43,9 @@ def get_session():
 def dense_to_one_hot(labels_dense,num_clases=5):
   return np.eye(num_clases)[labels_dense]
 
-MRI_LabelPath = '/home/reza/DeepKneeExplainer/resources/newlabel.csv'
-train_MRI_image_Path = '/home/reza/DeepKneeExplainer/resources/Data/MRI/unbalanced/up/training'
-test_MRI_image_Path = '/home/reza/DeepKneeExplainer/resources/Data/MRI/unbalanced/up/validation'
+MRI_LabelPath = 'labels/newlabel.csv' # comes with this repository 
+train_MRI_image_Path = 'MRI/unbalanced/up/training' # Download the MRI.zip file from the given link and password 
+test_MRI_image_Path = 'MRI/unbalanced/up/validation' # Download the MRI.zip file from the given link and password 
 modelPath = "ResNet18-KLnew.h5"
 resultPath = 'ResNet18_RESULTS-JSNnewbalance-MRIup.txt'
 
